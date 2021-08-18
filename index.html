@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello! I'm YeonBee!</title>
+<!-- meta property -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YeonBee's 자기소개" />
+    <meta property="og:title" content="YeonBee's 자기소개" />
+    <meta property="og:description" content="지연비의 자기소개 페이지입니다" />
+    <meta property="og:image" content="./images/myself.jpg" />
+    <meta property="og:url" content="https://" />
+<!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- reset.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<!-- css연결 -->
+    <link rel="stylesheet" href="./css/main.css">
+<!-- lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- font awsome -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+<!-- JS 연결 --> 
+    <script defer src="./js/main.js"></script>
+    <script src="./js/youtube.js"></script>
+</head>
+<body>
+    <!-- Header -->
+<header>
+    <div class=inner>
+        <a href="/" class="logo">
+            <img src="./images/myself.jpg" alt="내사진" class="image">
+        </a>
+        <div class="sub-menu">
+            <ul class="menu">
+                <li>
+                    <a href="javascript:void(0)">Sign In</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">Find</a>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text"/>
+                <div class="material-icons">search</div>
+            </div>
+        </div>
+        <ul class="main-menu">
+            <li class="item">
+                <a href="/">MAIN</a>
+            </li>
+            <li class="item">
+                <a href="#toPrevious" class="item__name">PREVIOUS</a>
+            </li>
+            <li class="item">
+                <a href="#toAbout" class="item__name">ABOUT</a>
+            </li>
+            <li class="item">
+                <a href="#toContact" class="item__name">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="badges">
+        <div class="badge">
+            <img src="./images/newBadge.png" alt="뱃지">
+        </div>
+    </div>
+</header>
+
+<!-- VISUAL -->
+<section class="visual">
+    <div class="inner">
+        <div class="title">
+            <p>Hello! I'm YeonBee!</p>
+            <p class="under">Thanks for visiting my website</p>
+        </div>
+    </div>
+</section>
+
+<!-- PREVIOUS -->
+<a name="toPrevious"></a>
+<section class="previous">
+    <div class="inner">
+        <div class="first">
+            <p>Previous Work</p>
+        </div>  
+        <div class="text">
+            <p>저는 이화여자대학교에서 행정학과 경제학을 전공하고 </p>
+            <p>공기업, 핀테크 회사에서 데이터 관련 업무를 했어요</p>
+            <p>더 알고 싶으시면 <a href="javascript:void(0)">click!</a>해주세요</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- LINE -->
+<a name="toAbout"></a>
+<section class="line">
+<div class="inner">
+    <div class="horizontal">
+        <div class="text">About Me</div>
+    </div>
+</div>        
+</section>
+
+
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="./images/slide/slide1.png" alt="필라테스">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide2.png" alt="mbti">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide3.png" alt="travel">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide4.png" alt="coffee">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide5.png" alt="dessert">
+          </div>
+        </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev">
+        <div class="material-icons">arrow_circle_left</div>
+    </div> 
+    <div class="swiper-button-next">
+        <div class="material-icons">arrow_circle_right</div>
+    </div>
+   
+   </div>
+</section>
+
+<!-- LINE -->
+<section class="line">
+    <div class="inner">
+        <div class="horizontal">
+            <div class="text2">음악을 듣고 싶으시면 <span style=color:#d2386c>icon</span>을 <span style=color:#d2386c>click</span>하세요!</div>
+        </div>
+    </div>
+</section>
+
+<!-- YOUTUBE VIDEO -->
+<section class="youtube">
+    <div class="youtube__area">
+        <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+</section>
+
+<!-- LINE -->
+<section class="line">
+    <div class="inner">
+    <div class="horizontal"></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<a name="toContact"></a>
+<section class="contact">
+    <div class="inner">
+        <div class="text1">
+            <p>Contact Me</p>
+        </div>
+        <div class="icons">
+            <a href="mailto:jyb8509@naver.com" target='_blank'>
+                <i class="fas fa-envelope-square"></i>
+            </a>
+            <a href="https://github.com/jyb8509" target='_blank'>
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://velog.io/@yeonbee" target='_blank'>
+                <i class="fab fa-blogger"></i>
+            </a>
+            <a href="https://www.instagram.com/jyb0924/" target='_blank'>
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<a href="#" class="btn_group">
+    <div class="material-icons">arrow_circle_up</div>
+</a>
+
+</body>
+</html>
