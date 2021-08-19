@@ -37,7 +37,7 @@ window.addEventListener('scroll', _.throttle(function(){
 // ABOUT 슬라이드
 
 const slide = new Swiper('.swiper-container', {
-    slidesPerView : 3, // 한 슬라이드에 보여줄 갯수
+    slidesPerView : 2, // 한 슬라이드에 보여줄 갯수
     spaceBetween : 10, // 슬라이드 사이 여백
     loop : true, // 슬라이드 반복 여부
     centeredSlides: true,
