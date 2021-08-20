@@ -138,10 +138,15 @@ header .badges .badge{
 
 /* line */
 
-.line .inner .horizontal1,
-.line .inner .horizontal2{
+.line .inner {
     display: none;
 }
+
+.string{
+    display: block;
+}
+
+
 
 /* mobile-contact */
 .contact{

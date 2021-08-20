@@ -183,8 +183,6 @@ header .main-menu-mobile{
     margin-left: -2rem;
 }
 
-
-
 header .main-menu-mobile .item{
     padding: .5rem;
     font-size: 1.5rem;
@@ -395,12 +393,29 @@ header .badges .badge{
     margin-left: 2rem;    
 }
 
+/* mobile-horizontal */
+.string{
+    background-image: url("../images/bg2.jpg");
+    background-position: center;
+    display: none;
+}
+
+.string .inner{
+    height: 5rem;
+    position: relative;
+}
+
+.string .inner .horizontal .text{
+    font-size: 1.9rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 1.25rem;
+    margin-left: 2rem;    
+}
 
 /* ABOUT */
 
-.about{
-
-}
 
 .about .swiper-container{
     background-image: url("../images/bg2.jpg");
@@ -564,7 +579,7 @@ header .badges .badge{
     background-image: url("../images/bg1.jpg");
     background-position: center;
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     display:none; 
 }
 
@@ -579,7 +594,7 @@ header .badges .badge{
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     display: block;
-    top : 1.8rem;
+    top : 4.5rem;
     margin-left: 2rem;
 }
 
@@ -596,7 +611,7 @@ header .badges .badge{
     font-size: 3rem;
     margin-left: 2rem;
     padding : 2rem;
-    margin-top: 2rem;
+    margin-top: 5.5rem;
 }
 .mobile-contact .inner .icons a:first-child{
     margin-left: 0;
