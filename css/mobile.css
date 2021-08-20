@@ -1,0 +1,153 @@
+/* 공통 */
+
+html {
+    font-size: 10px;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+
+
+/* Header */
+
+header{
+    background-color: #f6f5f0;
+    border-bottom: 0.05rem solid #c8c8c8;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%
+}
+
+header > .inner{
+  height: 6rem;
+  margin-left: 1rem;
+}
+
+header .logo{
+    position: absolute;
+    top: 1rem;
+}
+
+header .image{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+
+header .inner .icon-group{
+    display: flex;
+    position: absolute;
+    height: 6.5rem;
+    margin-left: 5rem;
+}
+
+header .inner .icon-group .material-icons{
+    display: block;
+    font-size: 2rem;
+    color: #656565;
+    margin: auto 2rem;
+}
+
+header .inner .icon-group .toogle_btn .material-icons{
+    position: absolute;
+    top: 2rem;
+}
+
+header .sub-menu {
+    display: none;
+}
+
+
+header .main-menu{
+    display: none;
+}
+
+header .main-menu-mobile{
+    display: none;
+}
+
+header .icon-group .toogle_btn{
+    display: block;
+}
+
+header .main-menu-mobile.active,
+header .icon-group .material-icons.active{
+    display:flex;
+}
+
+/* 뱃지 */
+header .badges .badge{
+    display: none;
+}
+
+/* VISUAL */
+
+.visual .inner{
+    height: 20rem;
+    position: relative;
+}
+
+.visual .inner .title p{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    position: absolute;
+    top: 8rem;
+}
+
+.visual .inner .title p.under{
+    font-size: 1rem;
+    margin-left: 2rem;
+    position: absolute;
+    top: 11.3rem;
+}
+
+
+/* previous */
+
+.previous .inner{
+    display: none;
+}
+
+.previous-work{
+    display:block;
+}
+
+
+/* ABOUT */
+
+.about .swiper-container{
+    display:none;
+}
+
+.mobile{
+    display: block;
+}
+
+/* YOUTUBE VIDEO */
+.youtube {
+    display: none;
+}
+
+/* line */
+
+.line .inner .horizontal1,
+.line .inner .horizontal2{
+    display: none;
+}
+
+/* mobile-contact */
+.contact{
+    display: none;
+}
+
+.mobile-contact{
+    display:block;
+}

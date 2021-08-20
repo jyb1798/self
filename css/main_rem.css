@@ -1,8 +1,12 @@
 /* 공통 */
+html {
+    font-size: 20px;
+}
+
 body {
+    font-size: 1rem;
     color:#333;
     font-weight: 400;
-    font-size: 20px;
     line-height: 1.4;
     font-family: 'Nanum Gothic', sans-serif;
     overflow-x: hidden;
@@ -17,7 +21,7 @@ a{
 }
 
 .inner{
-    width: 1100px;
+    width: 55rem;
     margin: 0 auto;
     position: relative;
    }
@@ -26,38 +30,40 @@ a{
 
 header{
     background-color: #f6f5f0;
-    border-bottom: 1px solid #c8c8c8;
+    border-bottom: 0.05rem solid #c8c8c8;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10;
+    z-index: 10
 }
 
-header  .inner{
-  height: 120px;
+header > .inner{
+  height: 6rem;
 }
 
 header .logo{
-    height: 95px;
+    height: 4.75rem;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
-    padding-left: 10px;
+    padding-left: .5rem;
 }
 
 header .image{
-    width: 95px;
-    height: 95px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;    
 }
 
 header .sub-menu {
     display: flex;
-    top: 20px;
-    right: 0px;
+    top: 1rem;
+    right: 0rem;
     position: absolute;
 }
+
+
 
 header .sub-menu ul.menu{
     font-family: Arial, Helvetica, sans-serif;
@@ -68,10 +74,11 @@ header .sub-menu ul.menu li{
     position: relative;
 }
 
+
 header .sub-menu ul.menu li::before{
     content: "";
-    width: 1px;
-    height: 12px;
+    width: 0.05rem;
+    height: 0.6rem;
     background-color:#656565;
     position: absolute;
     top: 0;
@@ -84,9 +91,9 @@ header .sub-menu ul.menu li:first-child::before{
 }    
 
 header .sub-menu ul.menu li a{
-    font-size: 15px;
-    margin: -5px;
-    padding: 11px 16px;
+    font-size: .75rem;
+    margin: -.25rem;
+    padding: .55rem .8rem;
     color: #656565; 
     display: block;
 }
@@ -96,26 +103,26 @@ header .sub-menu ul.menu li a:hover{
 }
 
 header .sub-menu .search {
-    height: 34px;
+    height: 1.7rem;
     position: relative;
 }
 
 header .sub-menu .search input {
-    width: 36px;
-    height: 34px;
-    padding: 4px 10px;
-    border: 1px solid #ccc;
+    width: 1.8rem;
+    height: 1.7rem;
+    padding: .2rem .5rem;
+    border: .05rem solid #ccc;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: .25rem;
     outline: none;
     background-color: #fff;
     color: #777;
-    font-size: 12px;
+    font-size: .6rem;
     transition: width .4s;
 }
 
 header .sub-menu .search input:focus {
-    width: 190px;
+    width: 9.5rem;
     border-color: #ccc;
     outline: none;
 }
@@ -123,24 +130,28 @@ header .sub-menu .search input:focus {
 
 header .sub-menu .search .material-icons {
     position: absolute;
-    height: 24px;
-    right: 5px;
+    height: 1.2rem;
+    right: .25rem;
     top: 0;
     bottom: 0;
     margin: auto;
 }
 
+header .inner .icon-group{
+    display:none;
+}
 
 header .main-menu{
     display: flex;
-    top: 60px;
+    top: 3rem;
     right: 0px;
     position: absolute;
 }
 
+
 header .main-menu .item{
-    padding: 10px 0px 34px 20px;
-    font-size: 18px;
+    padding: .5rem 0 1.7rem 1rem;
+    font-size: .9rem;
     font-family: Arial, Helvetica, sans-serif;
     display: block;
 }
@@ -151,56 +162,99 @@ header ul.main-menu li a{
 }
 
 header ul.main-menu li a:hover{
-    color: #333;
+    color: #d2386c;
 }
 
+
+/* 모바일용  메인메뉴*/
+
+header .main-menu-mobile{
+    background-color: #f6f5f0;
+    display: flex;
+    flex-direction:column;  
+    text-decoration: none;
+    position: absolute;
+    align-items: center;
+    display: none;
+    top: 6rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: -2rem;
+}
+
+
+
+header .main-menu-mobile .item{
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    justify-content: right;
+    text-align: right;
+    margin-left: -20rem;
+}
+
+
+header ul.main-menu-mobile li a{
+    color: #656565;
+}
+
+header ul.main-menu-mobile li a:hover{
+    color: #d2386c;
+}
+
+
+
+/* 뱃지 */
 header .badges{
     position: absolute;
-    top: 132px;
-    right: 12px;
+    top: 6.6rem;
+    right: 0.6rem;
 }
 
 header .badges .badge{
-    border-radius: 10px;
+    border-radius: .5rem;
     overflow: hidden;
-    margin-bottom: 12px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+    margin-bottom: .6rem;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .15);
     cursor: pointer;
 }
 
 /* VISUAL */
 
 .visual {
-    margin-top: 120px;
+    margin-top: 6rem;
     background-image: url("../images/bg6.jpeg");
     background-position: center;
     width: 100%;
 }
 
 .visual .inner{
-    height: 450px;
+    height: 22.5rem;
 }
 
-.visual .inner .first{
-    width: 1200px;
+.visual .inner .title{
+    width: 60rem;
 }
 
 .visual .inner .title p{
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 180px;
-    margin-left: 10px;
+    top: 9rem;
+    margin-left: .5rem;
 }
 
 .visual .inner .title p.under{
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Parisienne';
     position: absolute;
-    top: 250px;
-    margin-left: 10px;
+    top: 12.5rem;
+    margin-left: .5rem;
 }
 
 
@@ -213,33 +267,32 @@ header .badges .badge{
 }
 
 .previous .inner{
-    height: 500px;
+    height: 25rem;
     position: relative;
 }
 
 .previous .inner .first{
-    font-size: 38px;
+    font-size: 1.9rem;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    padding: 100px 0;
-    right: -1px;
+    padding: 5rem 0;
+    right: -.05rem;
 }
 
 
 .previous .inner .text{
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    padding: 180px 0;
+    padding: 9rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-
 
 
 .previous .inner .text p a{
@@ -249,6 +302,67 @@ header .badges .badge{
 .previous .inner .text p a:hover{
     color: #656565;
 }
+
+/* previous-work */
+
+.previous-work{
+    background-image: url("../images/bg1.jpg");
+    background-position: center;
+    width: 100%;
+    display: none;
+}
+
+
+.previous-work .inner{
+    height: 20rem;
+    position: relative;
+}
+
+.previous-work .inner .text h1{
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    padding: 5rem 0;
+    margin-left: 2rem;
+    top : .5rem;
+}
+
+
+.previous-work .inner .text p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 2rem;
+    position : absolute;
+    margin-top: 10rem;
+    padding: 10rem auto;    
+    display: inline;
+    line-height: .5rem;
+}
+
+
+
+/* .previous-work .inner .text p .text1{
+    position: absolute;
+    top: 12rem;
+}
+
+.previous-work .inner .text p .text2{
+    position: absolute;
+    top: 14rem;
+} */
+
+.previous-work .inner .text p a{
+    color: #d2386c;
+}
+
+.previous-work .inner .text p a:hover{
+    color: #656565;
+}
+
+
+
 
 
 /* LINE */
@@ -260,32 +374,25 @@ header .badges .badge{
 
 
 .line .inner{
-    height: 100px;
+    height: 5rem;
     position: relative;
 }
 
-.line .inner .horizontal{
-    width: 1920px;
-    height: 100px;
-    top: 120px;
+.line .inner .horizontal,
+.line .inner .horizontal1,
+.line .inner .horizontal2{
+    width: 96rem;
+    height: 5rem;
+    top: 6rem;
 }
 
 .line .inner .horizontal .text{
-    font-size: 38px;
+    font-size: 1.9rem;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 25px;
-    margin-left: 10px;    
-}
-
-.line .inner .horizontal .text2{
-    font-size: 25px;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    top: 25px;
-    margin-left: calc(1920px / 6);
+    top: 1.25rem;
+    margin-left: 2rem;    
 }
 
 
@@ -298,12 +405,13 @@ header .badges .badge{
 .about .swiper-container{
     background-image: url("../images/bg2.jpg");
 	width: 100%;
-	height: 500px;
+	height: 25rem;
 
 }
 
 
 .about .swiper-container .swiper-wrapper .swiper-slide{
+    width : 100%;
 	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
 	align-items:center; /* 위아래 기준 중앙정렬 */
 	justify-content:center; /* 좌우 기준 중앙정렬 */
@@ -318,22 +426,22 @@ header .badges .badge{
 
 .about .swiper-container .swiper-pagination{
     position: absolute;
-    bottom : 15px;
+    bottom : .75rem;
 
 }
 
 .about .swiper-container .swiper-button-prev .material-icons{
     color: #777;
-    font-size: 70px;
-    margin-left: 50px;
+    font-size: 3.5rem;
+    margin-left: 2.5rem;
     z-index:50;
 }
 
 
 .about .swiper-container .swiper-button-next .material-icons{
     color: #777;
-    font-size: 70px;
-    margin-right: 50px;
+    font-size: 3.5rem;
+    margin-right: 2.5rem;
     z-index:50;
 }
 
@@ -343,23 +451,50 @@ header .badges .badge{
     display: none;
 }
 
+.mobile{
+    display: none;
+}
+
+.mobile .swiper-container{
+    background-image: url("../images/bg2.jpg");
+    margin: 0;
+    padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.mobile .swiper-container .swiper-wrapper .swiper-slide{
+    width : 100%;
+	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center; 좌우 기준 중앙정렬
+    position: relative;
+}
+
+
+
+.mobile .swiper-container .swiper-pagination{
+    position: absolute;
+    bottom : .75rem;
+
+}
 
 
 /* YOUTUBE VIDEO */
 .youtube {
     position: relative;
-    height: 650px;
+    height: 32.5rem;
     background-image: url("../images/bg2.jpg");
     overflow: hidden;
 }
 
 .youtube .youtube__area{
-    width: 1920px;
+    width: 96rem;
     position: absolute;
     left: 50%;
-    margin-left: calc(1920px / -2);
+    margin-left: calc(96rem / -2);
     top: 50%;
-    margin-top: calc(1920px * 9 / 16 / -2)
+    margin-top: calc(96rem * 9 / 16 / -2)
 }
 
 .youtube .youtube__area::before{
@@ -370,15 +505,6 @@ header .badges .badge{
     padding-top: 56.25%;
 }
 
-/* .youtube .youtube__cover{
-    background-image: url("../images/video_cover.png");
-    background-color:rgba(0, 0, 0, .05);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
 
 #player{
     width: 100%;
@@ -394,7 +520,7 @@ header .badges .badge{
     background-image: url("../images/bg1.jpg");
     background-position: center;
     width: 100%;
-    height: 350px;
+    height: 17.5rem;
 }
 
 
@@ -403,13 +529,13 @@ header .badges .badge{
 }
 
 .contact .inner .text1 p{
-    font-size: 35px;
+    font-size: 1.75rem;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     display: block;
-    top : 25px;
-    right: -1px;
+    top : 1.25rem;
+    right: -.05rem;
 }
 
 .contact .inner .icons{
@@ -422,28 +548,81 @@ header .badges .badge{
 .contact .inner .icons a{
     text-decoration: none;
     color:#777;
-    font-size: 120px;
-    padding : 95px;
+    font-size: 6rem;
+    padding : 4.75rem;
 }
 
 .contact .inner .icons a:hover{
     color: #d2386c;
 }
 
+
+
+/* mobile-CONTACT */
+
+.mobile-contact{
+    background-image: url("../images/bg1.jpg");
+    background-position: center;
+    width: 100%;
+    height: 10rem;
+    display:none; 
+}
+
+
+.mobile-contact .inner{
+    position: relative;
+}
+
+.mobile-contact .inner .text1 p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    display: block;
+    top : 1.8rem;
+    margin-left: 2rem;
+}
+
+.mobile-contact .inner .icons{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+
+.mobile-contact .inner .icons a{
+    text-decoration: none;
+    color:#777;
+    font-size: 3rem;
+    margin-left: 2rem;
+    padding : 2rem;
+    margin-top: 2rem;
+}
+.mobile-contact .inner .icons a:first-child{
+    margin-left: 0;
+}
+
+.mobile-contact .inner .icons a:hover{
+    color: #d2386c;
+}
+
+
+
+/* 최상단 버튼 */
 .btn_group {
 	position:fixed;
-	bottom:30px;
-	right:30px;
+	bottom: 1.5rem;
+	right:1.5rem;
 	z-index:10;
 	outline:none;
 	color:#333;
 	cursor:pointer;
-	padding:15px 20px;
+	padding:.75rem 1rem;
 
 }
 
 .btn_group .material-icons{
-    font-size: 65px;
+    font-size: 3.25rem;
     color: #777;
 }
 

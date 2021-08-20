@@ -11,7 +11,7 @@
     <meta property="og:title" content="YeonBee's 자기소개" />
     <meta property="og:description" content="지연비의 자기소개 페이지입니다" />
     <meta property="og:image" content="./images/myself.jpg" />
-    <meta property="og:url" content="https://jyb8509.github.io/self/"/>
+    <meta property="og:url" content="https://" />
 <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +22,9 @@
 <!-- reset.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 <!-- css연결 -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/main_mobile.css" media="all and (min-width:200px) and (max-width:960px)">
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./css/main_rem.css">
+    <link rel="stylesheet" media="all and (min-width: 50px) and (max-width:480px)" href="./css/mobile.css" />
 <!-- lodash -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- gsap -->
@@ -33,9 +34,9 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- font awsome -->
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-<!-- JS 연결 --> 
+<!-- JS 연결 -->
     <script defer src="./js/main.js"></script>
-    <script src="./js/youtube.js"></script>
+    <script defer src="./js/youtube.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -57,12 +58,6 @@
                 <input type="text"/>
                 <div class="material-icons">search</div>
             </div>
-            <div class="icon-group">
-                <div id="one" class="material-icons">login</div>
-                <div id="two" class="material-icons">search</div>
-                <div id="three" class="material-icons">menu</div>
-            </div>
-
         </div>
         <ul class="main-menu">
             <li class="item">
@@ -78,10 +73,31 @@
                 <a href="#toContact" class="item__name">CONTACT</a>
             </li>
         </ul>
+        <ul class="main-menu-mobile">
+            <li class="item">
+                <a href="#toMain">MAIN</a>
+            </li>
+            <li class="item">
+                <a href="#toMain" class="item__name">PREVIOUS</a>
+            </li>
+            <li class="item">
+                <a href="#toMobile" class="item__name">ABOUT</a>
+            </li>
+            <li class="item">
+                <a href="#toContact" class="item__name">CONTACT</a>
+            </li>
+        </ul>
+        <div class="icon-group">
+            <div class="material-icons">login</div>
+            <div class="material-icons">search</div>
+            <div class="toogle_btn">
+                <div class="material-icons">menu</div>
+            </div>
+        </div>
 
     </div>
 
-
+<!-- 뱃지 -->
     <div class="badges">
         <div class="badge">
             <img src="./images/newBadge3.png" alt="뱃지">
@@ -103,15 +119,27 @@
 </section>
 
 <!-- PREVIOUS -->
-<a name="toPrevious"></a>
+<a name="toMain"></a>
 <section class="previous">
     <div class="inner">
         <div class="first">
             <p>Previous Work</p>
         </div>  
         <div class="text">
-            <p>저는 이화여자대학교에서 행정학과 경제학을 전공하고 </p>
-            <p>공기업, 핀테크 회사에서 데이터 관련 업무를 했어요</p>
+            <p class="text1">저는 이화여자대학교에서 행정학과 경제학을 전공하고</p>
+            <p class="text2">공기업, 핀테크 회사에서 데이터 관련 업무를 했어요</p>
+            <p class="text3">더 알고 싶으시면 <a href="javascript:void(0)">click!</a>해주세요</p>
+        </div>
+    </div>
+</section>
+
+<a name="toPreviousWork"></a>
+<section class="previous-work">
+    <div class="inner">
+        <div class="text">
+            <h1>Previous Work</h1>
+            <p>저는 이화여자대학교에서 행정학과 경제학을 전공하고</p><span style="line-height:200%"><br></span>
+            <p>공기업, 핀테크 회사에서 데이터 관련 업무를 했어요</p><span style="line-height:200%"><br></span> 
             <p>더 알고 싶으시면 <a href="javascript:void(0)">click!</a>해주세요</p>
         </div>
     </div>
@@ -163,14 +191,44 @@
    </div>
 </section>
 
+
+<!-- mobile-->
+<a name="toMobile"></a>
+<section class="mobile">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="./images/slide/slide1_m.png" alt="필라테스">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide2_m.png" alt="mbti">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide3_m.png" alt="travel">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide4_m.png" alt="coffee">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide5_m.png" alt="dessert">
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div> 
+        <div class="swiper-button-next"></div>
+   
+   </div>
+</section>
+
+
 <!-- LINE -->
 <section class="line">
     <div class="inner">
-        <div class="horizontal">
-            <!-- <div class="text2">음악을 듣고 싶으시면 <span style=color:#d2386c>icon</span>을 <span style=color:#d2386c>click</span>하세요!</div> -->
-        </div>
+        <div class="horizontal1"></div>
     </div>
 </section>
+
 
 <!-- YOUTUBE VIDEO -->
 <section class="youtube">
@@ -183,13 +241,37 @@
 <!-- LINE -->
 <section class="line">
     <div class="inner">
-    <div class="horizontal"></div>
+        <div class="horizontal2"></div>
     </div>
 </section>
 
 <!-- CONTACT -->
 <a name="toContact"></a>
 <section class="contact">
+    <div class="inner">
+        <div class="text1">
+            <p>Contact Me</p>
+        </div>
+        <div class="icons">
+            <a href="mailto:jyb8509@naver.com" target='_blank'>
+                <i class="fas fa-envelope-square"></i>
+            </a>
+            <a href="https://github.com/jyb8509" target='_blank'>
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://velog.io/@yeonbee" target='_blank'>
+                <i class="fab fa-blogger"></i>
+            </a>
+            <a href="https://www.instagram.com/jyb0924/" target='_blank'>
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- mobile-CONTACT -->
+<a name="toContact"></a>
+<section class="mobile-contact">
     <div class="inner">
         <div class="text1">
             <p>Contact Me</p>
