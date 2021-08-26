@@ -490,8 +490,8 @@ header .badges .badge{
 
 
 .mobile .swiper-container .swiper-pagination{
-    position: absolute;
-    bottom : .75rem;
+    /* position: absolute; */
+    bottom : -1rem;
 
 }
 
