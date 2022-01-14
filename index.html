@@ -1,312 +1,336 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello! I'm YeonBee!</title>
-<!-- meta property -->
+    <!-- meta property -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="YeonBee's 자기소개" />
     <meta property="og:title" content="YeonBee's 자기소개" />
     <meta property="og:description" content="지연비의 자기소개 페이지입니다" />
     <meta property="og:image" content="./images/myself.jpg" />
     <meta property="og:url" content="https://" />
-<!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-<!-- google icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<!-- reset.css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-<!-- css연결 -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- reset.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <!-- css연결 -->
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
-    <link rel="stylesheet" href="./css/main_rem.css">
-    <link rel="stylesheet" media="all and (min-width: 50px) and (max-width:480px)" href="./css/mobile.css" />
-<!-- lodash -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main_rem.css" />
+    <link
+      rel="stylesheet"
+      media="all and (min-width: 50px) and (max-width:480px)"
+      href="./css/mobile.css"
+    />
+    <!-- lodash -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+      integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- font awsome -->
+    <!-- font awsome -->
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-<!-- JS 연결 -->
+    <!-- JS 연결 -->
     <script defer src="./js/main.js"></script>
     <script defer src="./js/youtube.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
-<header>
-    <div class=inner>
+    <header>
+      <div class="inner">
         <a href="javascript:void(0)" class="logo">
-            <img src="./images/myself.jpg" alt="내사진" class="image">
+          <img src="./images/myself.jpg" alt="내사진" class="image" />
         </a>
         <div class="sub-menu">
-            <ul class="menu">
-                <li>
-                    <a href="javascript:void(0)">Sign In</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">Find</a>
-                </li>
-            </ul>
-            <div class="search">
-                <input type="text"/>
-                <div class="material-icons">search</div>
-            </div>
+          <ul class="menu">
+            <li>
+              <a href="javascript:void(0)">Sign In</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Find</a>
+            </li>
+          </ul>
+          <div class="search">
+            <input type="text" />
+            <div class="material-icons">search</div>
+          </div>
         </div>
         <ul class="main-menu">
-            <li class="item">
-                <a href="#toMain">MAIN</a>
-            </li>
-            <li class="item">
-                <a href="#toPrevious" class="item__name">PREVIOUS</a>
-            </li>
-            <li class="item">
-                <a href="#toAbout" class="item__name">ABOUT</a>
-            </li>
-            <li class="item">
-                <a href="#toContact" class="item__name">CONTACT</a>
-            </li>
+          <li class="item">
+            <a href="#toMain">MAIN</a>
+          </li>
+          <li class="item">
+            <a href="#toPrevious" class="item__name">PREVIOUS</a>
+          </li>
+          <li class="item">
+            <a href="#toAbout" class="item__name">ABOUT</a>
+          </li>
+          <li class="item">
+            <a href="#toContact" class="item__name">CONTACT</a>
+          </li>
         </ul>
         <ul class="main-menu-mobile">
-            <li class="item">
-                <a href="#toMain">MAIN</a>
-            </li>
-            <li class="item">
-                <a href="#toMain" class="item__name">PREVIOUS</a>
-            </li>
-            <li class="item">
-                <a href="#toMobile" class="item__name">ABOUT</a>
-            </li>
-            <li class="item">
-                <a href="#toContact" class="item__name">CONTACT</a>
-            </li>
+          <li class="item">
+            <a href="#toMain">MAIN</a>
+          </li>
+          <li class="item">
+            <a href="#toMain" class="item__name">PREVIOUS</a>
+          </li>
+          <li class="item">
+            <a href="#toMobile" class="item__name">ABOUT</a>
+          </li>
+          <li class="item">
+            <a href="#toContact" class="item__name">CONTACT</a>
+          </li>
         </ul>
         <div class="icon-group">
-            <div class="material-icons">login</div>
-            <div class="material-icons">search</div>
-            <div class="toogle_btn">
-                <div class="material-icons">menu</div>
-            </div>
+          <div class="material-icons">login</div>
+          <div class="material-icons">search</div>
+          <div class="toogle_btn">
+            <div class="material-icons">menu</div>
+          </div>
         </div>
+      </div>
 
-    </div>
-
-<!-- 뱃지 -->
-    <div class="badges">
+      <!-- 뱃지 -->
+      <div class="badges">
         <div class="badge">
-            <img src="./images/newBadge3.png" alt="뱃지">
+          <img src="./images/newBadge3.png" alt="뱃지" />
         </div>
-    </div>
+      </div>
+    </header>
 
-
-</header>
-
-<!-- VISUAL -->
-<a name="toMain"></a>
-<section class="visual">
-    <div class="inner">
+    <!-- VISUAL -->
+    <a name="toMain"></a>
+    <section class="visual">
+      <div class="inner">
         <div class="title">
-            <p>Hello! I'm YeonBee!</p>
-            <p class="under">Thanks for visiting my website</p>
+          <p>Hello! I'm YeonBee!</p>
+          <p class="under">Thanks for visiting my website</p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- PREVIOUS -->
-<a name="toPrevious"></a>
-<section class="previous">
-    <div class="inner">
+    <!-- PREVIOUS -->
+    <a name="toPrevious"></a>
+    <section class="previous">
+      <div class="inner">
         <div class="first">
-            <p>Previous Work</p>
-        </div>  
-        <div class="text">
-            <p class="text1">저는 이화여자대학교에서 행정학과 경제학을 전공하고</p>
-            <p class="text2">공기업, 핀테크 회사에서 데이터 관련 업무를 했어요</p>
-            <p class="text3">더 알고 싶으시면 <a href="javascript:void(0)">click!</a>해주세요</p>
+          <p>Previous Work</p>
         </div>
-    </div>
-</section>
-
-<a name="toPreviousWork"></a>
-<section class="previous-work">
-    <div class="inner">
         <div class="text">
-            <h1>Previous Work</h1>
-            <p>저는 이화여자대학교에서 행정학과 경제학을 전공하고</p><span style="line-height:200%"><br></span>
-            <p>공기업, 핀테크 회사에서 데이터 관련 업무를 했어요</p><span style="line-height:200%"><br></span> 
-            <p>더 알고 싶으시면 <a href="javascript:void(0)">click!</a>해주세요</p>
+          <p class="text1">
+            저는 이화여자대학교에서 행정학과 경제학을 전공하고
+          </p>
+          <p class="text2">공기업, 핀테크 회사에서 데이터 관련 업무를 했어요</p>
+          <p class="text3">
+            더 알고 싶으시면 <a href="javascript:void(0)">click!</a>해주세요
+          </p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <a name="toPreviousWork"></a>
+    <section class="previous-work">
+      <div class="inner">
+        <div class="text">
+          <h1>Previous Work</h1>
+          <p>저는 이화여자대학교에서 행정학과 경제학을 전공하고</p>
+          <span style="line-height: 200%"><br /></span>
+          <p>공기업, 핀테크 회사에서 데이터 관련 업무를 했어요</p>
+          <span style="line-height: 200%"><br /></span>
+          <p>
+            더 알고 싶으시면 <a href="javascript:void(0)">click!</a>해주세요
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!-- LINE -->
-<a name="toAbout"></a>
-<section class="line">
-<div class="inner">
-    <div class="horizontal">
-        <div class="text">About Me</div>
-    </div>
-</div>        
-</section>
+    <!-- LINE -->
+    <a name="toAbout"></a>
+    <section class="line">
+      <div class="inner">
+        <div class="horizontal">
+          <div class="text">About Me</div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-<!-- ABOUT -->
-<section class="about">
-    <div class="swiper-container">
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-              <img src="./images/slide/slide1.png" alt="필라테스">
+            <img src="./images/slide/slide1.png" alt="필라테스" />
           </div>
           <div class="swiper-slide">
-            <img src="./images/slide/slide2.png" alt="mbti">
+            <img src="./images/slide/slide2.png" alt="mbti" />
           </div>
           <div class="swiper-slide">
-            <img src="./images/slide/slide3.png" alt="travel">
+            <img src="./images/slide/slide3.png" alt="travel" />
           </div>
           <div class="swiper-slide">
-            <img src="./images/slide/slide4.png" alt="coffee">
+            <img src="./images/slide/slide4.png" alt="coffee" />
           </div>
           <div class="swiper-slide">
-            <img src="./images/slide/slide5.png" alt="dessert">
-          </div>
-        </div>
-
-    <div class="swiper-pagination"></div>
-
-    <div class="swiper-button-prev">
-        <div class="material-icons">arrow_circle_left</div>
-    </div> 
-    <div class="swiper-button-next">
-        <div class="material-icons">arrow_circle_right</div>
-    </div>
-   
-   </div>
-</section>
-
-<!-- LINE -->
-<a name="toMobile"></a>
-<section class="string">
-<div class="inner">
-    <div class="horizontal">
-        <div class="text">About Me</div>
-    </div>
-</div>        
-</section>
-
-<!-- mobile-->
-<a name="toMobile"></a>
-<section class="mobile">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-              <img src="./images/slide/slide1_m.png" alt="필라테스">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide/slide2_m.png" alt="mbti">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide/slide3_m.png" alt="travel">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide/slide4_m.png" alt="coffee">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/slide/slide5_m.png" alt="dessert">
+            <img src="./images/slide/slide5.png" alt="dessert" />
           </div>
         </div>
 
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div> 
+
+        <div class="swiper-button-prev">
+          <div class="material-icons">arrow_circle_left</div>
+        </div>
+        <div class="swiper-button-next">
+          <div class="material-icons">arrow_circle_right</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINE -->
+    <a name="toMobile"></a>
+    <section class="string">
+      <div class="inner">
+        <div class="horizontal">
+          <div class="text">About Me</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile-->
+    <a name="toMobile"></a>
+    <section class="mobile">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/slide/slide1_m.png" alt="필라테스" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide2_m.png" alt="mbti" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide3_m.png" alt="travel" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide4_m.png" alt="coffee" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/slide/slide5_m.png" alt="dessert" />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-   
-   </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- LINE -->
-<section class="line">
-    <div class="inner">
+    <!-- LINE -->
+    <section class="line">
+      <div class="inner">
         <div class="horizontal1"></div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- YOUTUBE VIDEO -->
-<section class="youtube">
-    <div class="youtube__area">
+    <!-- YOUTUBE VIDEO -->
+    <section class="youtube">
+      <div class="youtube__area">
         <div id="player"></div>
-    </div>
-    <div class="youtube__cover"></div>
-</section>
+      </div>
+      <div class="youtube__cover"></div>
+    </section>
 
-<!-- LINE -->
-<section class="line">
-    <div class="inner">
+    <!-- LINE -->
+    <section class="line">
+      <div class="inner">
         <div class="horizontal2"></div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- CONTACT -->
-<a name="toContact"></a>
-<section class="contact">
-    <div class="inner">
+    <!-- CONTACT -->
+    <a name="toContact"></a>
+    <section class="contact">
+      <div class="inner">
         <div class="text1">
-            <p>Contact Me</p>
+          <p>Contact Me</p>
         </div>
         <div class="icons">
-            <a href="mailto:jyb8509@naver.com" target='_blank'>
-                <i class="fas fa-envelope-square"></i>
-            </a>
-            <a href="https://github.com/jyb8509" target='_blank'>
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://velog.io/@yeonbee" target='_blank'>
-                <i class="fab fa-blogger"></i>
-            </a>
-            <a href="https://www.instagram.com/jyb0924/" target='_blank'>
-                <i class="fab fa-instagram"></i>
-            </a>
+          <a href="mailto:jyb8509@naver.com" target="_blank">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+          <a href="https://github.com/jyb8509" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://velog.io/@yeonbee" target="_blank">
+            <i class="fab fa-blogger"></i>
+          </a>
+          <a href="https://www.instagram.com/jyb0924/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- mobile-CONTACT -->
-<a name="toContact"></a>
-<section class="mobile-contact">
-    <div class="inner">
+    <!-- mobile-CONTACT -->
+    <a name="toContact"></a>
+    <section class="mobile-contact">
+      <div class="inner">
         <div class="text1">
-            <p>Contact Me</p>
+          <p>Contact Me</p>
         </div>
         <div class="icons">
-            <a href="mailto:jyb8509@naver.com" target='_blank'>
-                <i class="fas fa-envelope-square"></i>
-            </a>
-            <a href="https://github.com/jyb8509" target='_blank'>
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://velog.io/@yeonbee" target='_blank'>
-                <i class="fab fa-blogger"></i>
-            </a>
-            <a href="https://www.instagram.com/jyb0924/" target='_blank'>
-                <i class="fab fa-instagram"></i>
-            </a>
+          <a href="mailto:jyb8509@naver.com" target="_blank">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+          <a href="https://github.com/jyb1798" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://velog.io/@yeonbee" target="_blank">
+            <i class="fab fa-blogger"></i>
+          </a>
+          <a href="https://www.instagram.com/jyb0924/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<a href="#" class="btn_group">
-    <div class="material-icons">arrow_circle_up</div>
-</a>
-
-</body>
+    <a href="#" class="btn_group">
+      <div class="material-icons">arrow_circle_up</div>
+    </a>
+  </body>
 </html>
